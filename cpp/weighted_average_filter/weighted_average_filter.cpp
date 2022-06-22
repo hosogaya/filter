@@ -32,8 +32,8 @@ float WAF::push(const float value) {
     else {
         // array_[ind_] = value;
         waf_ = 2.0f/(num_*(num_ + 1)) * (num_*value - sum_);
-        sum_ += (value - array[ind_]);
-        array[ind_] = value;
+        sum_ += (value - array_[ind_]);
+        array_[ind_] = value;
         ++ind_; if (ind_ == max_num_) ind_ = 0;        
     }
 }

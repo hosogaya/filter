@@ -16,7 +16,7 @@ class MAF {
         MAF(const unsigned int num);
         ~MAF();
         double average();
-        void push(const double value);
+        double push(const double value);
     
     private:
         double* array_;

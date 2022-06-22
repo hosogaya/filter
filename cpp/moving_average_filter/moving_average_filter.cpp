@@ -20,7 +20,7 @@ double MAF::average() {
  * @tparam N : size of filter
  * @param value : the newest value
  */
-void MAF::push(double value) {
+double MAF::push(double value) {
     if (num_ < max_num_) {
         ++num_;
         array_[ind_++] = value;
